@@ -132,6 +132,16 @@ class MakeMigrationJsonCommand extends Command
     }
 
     /**
+     * Alias for fire required in Laravel 5.5.
+     *
+     * @return mixed
+     */
+    public function handle()
+    {
+        return $this->fire();
+    }
+
+    /**
     * Make the json migration
     *
     * @return void
